@@ -1,4 +1,4 @@
-var req = new XMLHttpRequest();
+/*var req = new XMLHttpRequest();
 req.open(
     "GET",
     "http://www.google.com",
@@ -8,4 +8,4 @@ req.send(null);
 function showTM() {
   var trafficMonitor = req.responseXML.getElementById("gs_id0");
   document.body.appendChild(trafficMonitor);
-}
+}*/
