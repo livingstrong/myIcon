@@ -1,0 +1,25 @@
+{
+	"content_scripts": [{
+		"js": ["myIcon.js"],
+		"matches": ["<all_urls>"]
+  }],
+  "manifest_version":1,
+	"browser_action": {
+		"default_title": "myIcon",
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
+  },
+  "icons": { "16": "icon16.png",
+           	 "48": "icon48.png",
+          	 "128": "icon128.png" 
+  },
+	"description": "This extension will help to replace bookmark favicons by yourself.",
+	"name": "myIcon",
+	"options_page": "options.html",
+	"version": "1.0",
+	"permissions": [
+    "tabs", 
+    "http://*/*",
+ 		"contextMenus"
+  ]
+}

@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="/myIcon.js"></script>
+<script>
+var req = new XMLHttpRequest();
+req.open(
+    "GET",
+    "http://192.168.1.1",
+    true);
+req.onload = showTM;
+req.send(null);
+function showTM() {
+  var trafficMonitor = req.responseXML.getElementById("gs_id0");
+  document.body.appendChild(trafficMonitor);
+}
+</script>
+</head>
+<body>
+<div style="margin:5px;">
+	Please enter the domain name: 
+	<input type="text" style="width:200px" name="newDomain" id="newDomain" value="">
+	<br/>
+	Please enter the url: 
+	<input type="text" style="width:200px" name="newUrl" id="newUrl" value="">
+	<br/>
+	<input type="button" value="Add" onclick="addNewItem();">
+	<input type="button" value="Delete All" onclick="">
+<div>
+</body>
+</html>
